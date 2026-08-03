@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="prog\basic.frag">
+      <Filter>prog</Filter>
+    </None>
+    <None Include="prog\basic.vert">
+      <Filter>prog</Filter>
+    </None>
+    <None Include="prog\basicrte2.frag">
+      <Filter>prog</Filter>
+    </None>
+    <None Include="prog\basicrte2.vert">
+      <Filter>prog</Filter>
+    </None>
+    <None Include="prog\textile.frag">
+      <Filter>prog</Filter>
+    </None>
+    <None Include="prog\textile.vert">
+      <Filter>prog</Filter>
+    </None>
+    <None Include="prog\textile3.frag">
+      <Filter>prog</Filter>
+    </None>
+    <None Include="prog\textile3.vert">
+      <Filter>prog</Filter>
+    </None>
+    <None Include="prog\objects2.frag">
+      <Filter>prog</Filter>
+    </None>
+    <None Include="prog\objects2.vert">
+      <Filter>prog</Filter>
+    </None>
+    <None Include="prog\objects3.frag">
+      <Filter>prog</Filter>
+    </None>
+    <None Include="prog\objects3.vert">
+      <Filter>prog</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gcprec.cpp" />
+    <ClCompile Include="gisdom\actionproc.cpp">
+      <Filter>gisdom</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\engine.cpp">
+      <Filter>gisdom</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\io\geos_reader.cpp">
+      <Filter>gisdom\io</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\io\WKBreader.cpp">
+      <Filter>gisdom\io</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\io\WKBwriter.cpp">
+      <Filter>gisdom\io</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\models\selectionmodel.cpp">
+      <Filter>gisdom\models</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\models\geometric.cpp">
+      <Filter>gisdom\models</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\models\model.cpp">
+      <Filter>gisdom\models</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\models\modeltester.cpp">
+      <Filter>gisdom\models</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\models\modeltest.hpp">
+      <Filter>gisdom\models</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\type\entitypck.cpp">
+      <Filter>gisdom\type</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\type\entity.cpp">
+      <Filter>gisdom\type</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\type\entityset.cpp">
+      <Filter>gisdom\type</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\type\typeschema.cpp">
+      <Filter>gisdom\type</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\alg\geoproj.cpp">
+      <Filter>gisdom\alg</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\alg\wgsop.cpp">
+      <Filter>gisdom\alg</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\geom\CoordinateFilter.cpp">
+      <Filter>gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\geom\CoordSeq.cpp">
+      <Filter>gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\geom\Geometry.cpp">
+      <Filter>gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\geom\LineString.cpp">
+      <Filter>gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\geom\MGeometry.cpp">
+      <Filter>gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\geom\MLineString.cpp">
+      <Filter>gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\geom\MPoint.cpp">
+      <Filter>gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\geom\MPolygon.cpp">
+      <Filter>gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\geom\Point.cpp">
+      <Filter>gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\geom\Polygon.cpp">
+      <Filter>gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\node\udatanode.cpp">
+      <Filter>gisdom\node</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\node\umodelnode.cpp">
+      <Filter>gisdom\node</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\node\urendernode.cpp">
+      <Filter>gisdom\node</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\teches\techbase.cpp">
+      <Filter>gisdom\teches</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\teches\techbasic.cpp">
+      <Filter>gisdom\teches</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\DataTree.cpp">
+      <Filter>wxui</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\editorfrm.cpp">
+      <Filter>wxui</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\menucmd.cpp">
+      <Filter>wxui</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\PIFrame.cpp">
+      <Filter>wxui</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\wxapp.cpp">
+      <Filter>wxui</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\InputTool.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\PlotModel.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\PlotModelBase.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\Tool.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\ToolOptions.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\CConnect.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\wsitem.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\wstablegroup.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\wsdatasrc.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\wsdatasrcgroup.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\wsfile.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\wslayer.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\wsscene.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\wsscenegroup.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\wstable.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\teches\techbasicrte2.cpp">
+      <Filter>gisdom\teches</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\type\coretypes.cpp">
+      <Filter>gisdom\type</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\config.cpp">
+      <Filter>gisdom</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\teches\tech_tiled2.cpp">
+      <Filter>gisdom\teches</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\models\imagetile.cpp">
+      <Filter>gisdom\models</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\teches\tech_tiled3.cpp">
+      <Filter>gisdom\teches</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\CircleTool.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\BaseLineTool.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\DifferenceTool.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\IntersectionTool.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\MoveTool.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\RotatePM.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\RotateTool.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\DotTool.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\HandTool.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\LineTool.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\PointerTool.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\PolygonTool.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\RectPM.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\RectTool.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\RulerTool.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\VertexEditor.cpp">
+      <Filter>wxui\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\wsmodel.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\wsmodelgroup.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\wsmodeltableinput.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\wscolumngroup.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\wscolumn.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\wsmodeltableinputgroup.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\wsmodeltableinputcolumn.cpp">
+      <Filter>wxui\tree</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\dlg\IconSingleChoiceDialog.cpp">
+      <Filter>wxui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\models\modeldemtile.cpp">
+      <Filter>gisdom\models</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\datasrc\datasrc.cpp">
+      <Filter>gisdom\datasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\datasrc\wmsnode.cpp">
+      <Filter>gisdom\datasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\datasrc\pgnode.cpp">
+      <Filter>gisdom\datasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\datasrc\demdata.cpp">
+      <Filter>gisdom\datasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\demcachedlg.cpp">
+      <Filter>wxui</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\teches\tech_objects2.cpp">
+      <Filter>gisdom\teches</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\models\model_objects.cpp">
+      <Filter>gisdom\models</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\teches\tech_objects3.cpp">
+      <Filter>gisdom\teches</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\datasrc\pgconn.cpp">
+      <Filter>gisdom\datasrc</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\io\utils.cpp">
+      <Filter>gisdom\io</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\teches\gl_fbo.cpp">
+      <Filter>gisdom\teches</Filter>
+    </ClCompile>
+    <ClCompile Include="gisdom\teches\gl_program.cpp">
+      <Filter>gisdom\teches</Filter>
+    </ClCompile>
+    <ClCompile Include="wxui\Canvas.cpp">
+      <Filter>wxui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gcprec.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="gisdom\actionproc.h">
+      <Filter>gisdom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\idxpool.h">
+      <Filter>gisdom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\engine.hpp">
+      <Filter>gisdom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\io\geos_io.h">
+      <Filter>gisdom\io</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\io\wkbio.h">
+      <Filter>gisdom\io</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\models\selectionmodel.h">
+      <Filter>gisdom\models</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\models\geometric.h">
+      <Filter>gisdom\models</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\models\model.h">
+      <Filter>gisdom\models</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\type\entitypck.h">
+      <Filter>gisdom\type</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\type\entity.h">
+      <Filter>gisdom\type</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\type\entityset.h">
+      <Filter>gisdom\type</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\type\typeschema.hpp">
+      <Filter>gisdom\type</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\alg\earcut.hpp">
+      <Filter>gisdom\alg</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\alg\alg_geos.h">
+      <Filter>gisdom\alg</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\alg\gc_algebra.h">
+      <Filter>gisdom\alg</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\alg\geoproj.h">
+      <Filter>gisdom\alg</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\alg\wgsop.h">
+      <Filter>gisdom\alg</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\geom\Box.h">
+      <Filter>gisdom\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\geom\Coordinate.h">
+      <Filter>gisdom\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\geom\CoordinateFilter.h">
+      <Filter>gisdom\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\geom\CoordSeq.h">
+      <Filter>gisdom\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\geom\Geometry.h">
+      <Filter>gisdom\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\geom\LineSegment.h">
+      <Filter>gisdom\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\geom\LineString.h">
+      <Filter>gisdom\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\geom\MGeometry.h">
+      <Filter>gisdom\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\geom\MLineString.h">
+      <Filter>gisdom\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\geom\MPoint.h">
+      <Filter>gisdom\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\geom\MPolygon.h">
+      <Filter>gisdom\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\geom\Point.h">
+      <Filter>gisdom\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\geom\Polygon.h">
+      <Filter>gisdom\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\node\udatanode.hpp">
+      <Filter>gisdom\node</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\node\umodelnode.h">
+      <Filter>gisdom\node</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\node\urendernode.hpp">
+      <Filter>gisdom\node</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\teches\techbase.h">
+      <Filter>gisdom\teches</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\teches\techbasic.h">
+      <Filter>gisdom\teches</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\DataTree.h">
+      <Filter>wxui</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\EditorCmds.h">
+      <Filter>wxui</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\gvesizer.h">
+      <Filter>wxui</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\editorfrm.h">
+      <Filter>wxui</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\menucmd.h">
+      <Filter>wxui</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\PIFrame.h">
+      <Filter>wxui</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\inputtool.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\PlotModel.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\PlotModelBase.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\tool.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\ToolOptions.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\CConnect.h">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\wstablegroup.h">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\wsdatasrc.h">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\wsdatasrcgroup.h">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\wsfile.h">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\wsitem.h">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\wslayer.hpp">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\wsscene.h">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\wsscenegroup.h">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\wstable.hpp">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\teches\techbasicrte2.h">
+      <Filter>gisdom\teches</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\unique_handle.h">
+      <Filter>gisdom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\type\coretypes.h">
+      <Filter>gisdom\type</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\config.h">
+      <Filter>gisdom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\teches\tech_tiled2.h">
+      <Filter>gisdom\teches</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\models\imagetile.h">
+      <Filter>gisdom\models</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\key_sorted.h">
+      <Filter>gisdom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\teches\tech_tiled3.h">
+      <Filter>gisdom\teches</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\tileid.h">
+      <Filter>gisdom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\geom\aabb.h">
+      <Filter>gisdom\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\CircleTool.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\BaseLineTool.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\DifferenceTool.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\IntersectionTool.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\MoveTool.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\RotatePM.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\RotateTool.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\DotTool.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\HandTool.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\LineTool.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\PointerTool.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\PolygonTool.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\RectPM.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\RectTool.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\RulerTool.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\VertexEditor.h">
+      <Filter>wxui\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\wsmodel.h">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\wsmodelgroup.h">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\wsmodeltableinput.h">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\models\modelschema.h">
+      <Filter>gisdom\models</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\wscolumngroup.h">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\wscolumn.h">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\wsmodeltableinputgroup.h">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\wsmodeltableinputcolumn.h">
+      <Filter>wxui\tree</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\dlg\IconSingleChoiceDialog.h">
+      <Filter>wxui\dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\models\modeldemtile.h">
+      <Filter>gisdom\models</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\datasrc\datasrc.h">
+      <Filter>gisdom\datasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\datasrc\wmsnode.h">
+      <Filter>gisdom\datasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\datasrc\pgnode.h">
+      <Filter>gisdom\datasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\datasrc\pg_type.h">
+      <Filter>gisdom\datasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\datasrc\demdata.h">
+      <Filter>gisdom\datasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\datasrc\datasrcshema.h">
+      <Filter>gisdom\datasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\demcachedlg.h">
+      <Filter>wxui</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\teches\tech_objects2.h">
+      <Filter>gisdom\teches</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\models\model_objects.h">
+      <Filter>gisdom\models</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\teches\tech_objects3.h">
+      <Filter>gisdom\teches</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\cxxcompat.h">
+      <Filter>gisdom</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\datasrc\pgconn.h">
+      <Filter>gisdom\datasrc</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\io\utils.h">
+      <Filter>gisdom\io</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\sigslot.h">
+      <Filter>wxui</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\teches\RendererGL.h">
+      <Filter>gisdom\teches</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\teches\gl_fbo.h">
+      <Filter>gisdom\teches</Filter>
+    </ClInclude>
+    <ClInclude Include="gisdom\teches\gl_program.h">
+      <Filter>gisdom\teches</Filter>
+    </ClInclude>
+    <ClInclude Include="wxui\Canvas.h">
+      <Filter>wxui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="geoce.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="gisdom">
+      <UniqueIdentifier>{47b2b75d-da18-41f9-b5f3-74f472e68f8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gisdom\geom">
+      <UniqueIdentifier>{0cccd3c6-c81d-478a-96d3-538333cd3d0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gisdom\io">
+      <UniqueIdentifier>{ebb7a22c-1b8e-4f6d-a2d0-949326cc2c2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gisdom\models">
+      <UniqueIdentifier>{f658b29b-381e-4a92-910f-4bedddab7480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gisdom\type">
+      <UniqueIdentifier>{08412a33-d09f-4c88-8de9-67c9d39c06a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gisdom\alg">
+      <UniqueIdentifier>{7d3fd877-9294-4267-85fb-0de82f1a0b1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gisdom\node">
+      <UniqueIdentifier>{934415aa-57eb-4a99-be43-f5b63f6d4fc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gisdom\teches">
+      <UniqueIdentifier>{6cce82c9-7792-4b81-9457-6674c9226e7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wxui">
+      <UniqueIdentifier>{39d26c41-5572-46ba-88a6-5a7289c23f69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wxui\dlg">
+      <UniqueIdentifier>{e581009f-a4e0-49bb-bfdb-1d1b9b98814c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wxui\tools">
+      <UniqueIdentifier>{87da61ff-3fa3-41cb-bc11-ad126559aa3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wxui\tree">
+      <UniqueIdentifier>{f5f4703f-4013-4b78-876f-91f574c526ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="prog">
+      <UniqueIdentifier>{1b9c8821-e8d5-4c28-a7bd-bdc8c071514e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gisdom\datasrc">
+      <UniqueIdentifier>{424f392c-6fdb-4b24-a32f-fb5921c61b5a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

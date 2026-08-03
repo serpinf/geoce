@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\gisdom\geom\CoordSeq.cpp">
+      <Filter>src\gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gisdom\geom\CoordinateFilter.cpp">
+      <Filter>src\gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gisdom\geom\Geometry.cpp">
+      <Filter>src\gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gisdom\geom\MPolygon.cpp">
+      <Filter>src\gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="test_coordseq.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gisdom\geom\Polygon.cpp">
+      <Filter>src\gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gisdom\geom\Point.cpp">
+      <Filter>src\gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="test_coordinate.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gisdom\geom\LineString.cpp">
+      <Filter>src\gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gisdom\alg\wgsop.cpp">
+      <Filter>src\gisdom\alg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gisdom\geom\MGeometry.cpp">
+      <Filter>src\gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="test_box.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_idxpool.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_aabb.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gisdom\geom\MPoint.cpp">
+      <Filter>src\gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gisdom\io\geos_reader.cpp">
+      <Filter>src\gisdom\io</Filter>
+    </ClCompile>
+    <ClCompile Include="test_linesegment.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gisdom\geom\MLineString.cpp">
+      <Filter>src\gisdom\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="test_tileid.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_algebra.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="test_geometry.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="COORDSEQ_TESTS.md">
+      <Filter>tests</Filter>
+    </None>
+    <None Include="LINESEGMENT_TESTS.md">
+      <Filter>tests</Filter>
+    </None>
+    <None Include="packages.config">
+      <Filter>tests</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{69a60799-d5ad-4cb4-b7f7-b223ebee7b2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gisdom">
+      <UniqueIdentifier>{b56e2623-1e93-4406-8067-e87051e29e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gisdom\geom">
+      <UniqueIdentifier>{77f70f6f-03b2-410a-ac52-b5a088016b0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{05b302a8-36e2-4aec-a9a5-18d941cab6db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gisdom\alg">
+      <UniqueIdentifier>{07889f65-e7fe-4c1f-8119-1517485364f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gisdom\io">
+      <UniqueIdentifier>{c125f73b-d5ea-4690-8260-093cf63364c0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>tests</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

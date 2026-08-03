@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gisdom\alg\earcut.hpp" />
+    <ClInclude Include="gisdom\config.h" />
+    <ClInclude Include="gisdom\cxxcompat.h" />
+    <ClInclude Include="gisdom\datasrc\datasrc.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="gisdom\datasrc\datasrcshema.h" />
+    <ClInclude Include="gisdom\datasrc\demdata.h" />
+    <ClInclude Include="gisdom\datasrc\pgconn.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="gisdom\datasrc\pgnode.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="gisdom\datasrc\pg_type.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="gisdom\datasrc\wmsnode.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="gisdom\geom\aabb.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <None Include="prog\basic.frag">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="prog\basic.vert">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="prog\basicrte2.frag">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="prog\basicrte2.vert">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="prog\objects2.frag">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="prog\objects2.vert">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="prog\objects3.frag">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="prog\objects3.vert">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="prog\textile.frag">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="prog\textile.vert">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="prog\textile3.frag">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="prog\textile3.vert">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gisdom\actionproc.cpp" />
+    <ClCompile Include="gisdom\config.cpp" />
+    <ClCompile Include="gisdom\datasrc\datasrc.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="gisdom\datasrc\demdata.cpp" />
+    <ClCompile Include="gisdom\datasrc\pgconn.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="gisdom\datasrc\pgnode.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="gisdom\datasrc\wmsnode.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="gisdom\io\utils.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="gisdom\models\modeldemtile.cpp" />
+    <ClCompile Include="gisdom\models\imagetile.cpp" />
+    <ClCompile Include="gisdom\models\model_objects.cpp" />
+    <ClCompile Include="gisdom\models\selectionmodel.cpp" />
+    <ClCompile Include="gisdom\teches\gl_fbo.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="gisdom\teches\gl_program.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="gisdom\teches\techbasicrte2.cpp" />
+    <ClCompile Include="gisdom\teches\tech_objects2.cpp" />
+    <ClCompile Include="gisdom\teches\tech_objects3.cpp" />
+    <ClCompile Include="gisdom\teches\tech_tiled2.cpp" />
+    <ClCompile Include="gisdom\teches\tech_tiled3.cpp" />
+    <ClCompile Include="gisdom\type\coretypes.cpp" />
+    <ClCompile Include="gisdom\type\entitypck.cpp" />
+    <ClCompile Include="gcprec.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="gisdom\alg\geoproj.cpp" />
+    <ClCompile Include="gisdom\alg\wgsop.cpp" />
+    <ClCompile Include="gisdom\engine.cpp" />
+    <ClCompile Include="gisdom\geom\CoordinateFilter.cpp" />
+    <ClCompile Include="gisdom\geom\CoordSeq.cpp" />
+    <ClCompile Include="gisdom\geom\Geometry.cpp" />
+    <ClCompile Include="gisdom\geom\LineString.cpp" />
+    <ClCompile Include="gisdom\geom\MGeometry.cpp" />
+    <ClCompile Include="gisdom\geom\MLineString.cpp" />
+    <ClCompile Include="gisdom\geom\MPoint.cpp" />
+    <ClCompile Include="gisdom\geom\MPolygon.cpp" />
+    <ClCompile Include="gisdom\geom\Point.cpp" />
+    <ClCompile Include="gisdom\geom\Polygon.cpp" />
+    <ClCompile Include="gisdom\io\geos_reader.cpp" />
+    <ClCompile Include="gisdom\io\WKBreader.cpp" />
+    <ClCompile Include="gisdom\io\WKBwriter.cpp" />
+    <ClCompile Include="gisdom\models\geometric.cpp" />
+    <ClCompile Include="gisdom\models\model.cpp" />
+    <ClCompile Include="gisdom\models\modeltester.cpp" />
+    <ClCompile Include="gisdom\models\modeltest.hpp" />
+    <ClCompile Include="gisdom\node\udatanode.cpp" />
+    <ClCompile Include="gisdom\node\umodelnode.cpp" />
+    <ClCompile Include="gisdom\node\urendernode.cpp" />
+    <ClCompile Include="gisdom\teches\techbase.cpp" />
+    <ClCompile Include="gisdom\teches\techbasic.cpp" />
+    <ClCompile Include="gisdom\type\entity.cpp" />
+    <ClCompile Include="gisdom\type\entityset.cpp" />
+    <ClCompile Include="gisdom\type\typeschema.cpp" />
+    <ClCompile Include="wxui\Canvas.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\DataTree.cpp" />
+    <ClCompile Include="wxui\demcachedlg.cpp" />
+    <ClCompile Include="wxui\dlg\IconSingleChoiceDialog.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\editorfrm.cpp" />
+    <ClCompile Include="wxui\menucmd.cpp" />
+    <ClCompile Include="wxui\PIFrame.cpp" />
+    <ClCompile Include="wxui\tools\BaseLineTool.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\CircleTool.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\DifferenceTool.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\DotTool.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\HandTool.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\InputTool.cpp" />
+    <ClCompile Include="wxui\tools\IntersectionTool.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\LineTool.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\MoveTool.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\PlotModel.cpp" />
+    <ClCompile Include="wxui\tools\PlotModelBase.cpp" />
+    <ClCompile Include="wxui\tools\PointerTool.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\PolygonTool.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\RectPM.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\RectTool.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\RotatePM.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\RotateTool.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\RulerTool.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\tools\Tool.cpp" />
+    <ClCompile Include="wxui\tools\ToolOptions.cpp" />
+    <ClCompile Include="wxui\tools\VertexEditor.cpp">
+      <DeploymentContent>false</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="wxui\tree\CConnect.cpp" />
+    <ClCompile Include="wxui\tree\wscolumngroup.cpp" />
+    <ClCompile Include="wxui\tree\wscolumn.cpp" />
+    <ClCompile Include="wxui\tree\wsitem.cpp" />
+    <ClCompile Include="wxui\tree\wsmodel.cpp" />
+    <ClCompile Include="wxui\tree\wsmodelgroup.cpp" />
+    <ClCompile Include="wxui\tree\wsmodeltableinput.cpp" />
+    <ClCompile Include="wxui\tree\wsmodeltableinputcolumn.cpp" />
+    <ClCompile Include="wxui\tree\wsmodeltableinputgroup.cpp" />
+    <ClCompile Include="wxui\tree\wstablegroup.cpp" />
+    <ClCompile Include="wxui\tree\wsdatasrc.cpp" />
+    <ClCompile Include="wxui\tree\wsdatasrcgroup.cpp" />
+    <ClCompile Include="wxui\tree\wsfile.cpp" />
+    <ClCompile Include="wxui\tree\wslayer.cpp" />
+    <ClCompile Include="wxui\tree\wsscene.cpp" />
+    <ClCompile Include="wxui\tree\wsscenegroup.cpp" />
+    <ClCompile Include="wxui\tree\wstable.cpp" />
+    <ClCompile Include="wxui\wxapp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gisdom\actionproc.h" />
+    <ClInclude Include="gisdom\idxpool.h" />
+    <ClInclude Include="gisdom\io\utils.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="gisdom\key_sorted.h" />
+    <ClInclude Include="gisdom\models\modeldemtile.h" />
+    <ClInclude Include="gisdom\models\imagetile.h" />
+    <ClInclude Include="gisdom\models\modelschema.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="gisdom\models\model_objects.h" />
+    <ClInclude Include="gisdom\models\selectionmodel.h" />
+    <ClInclude Include="gisdom\teches\gl_fbo.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="gisdom\teches\gl_program.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="gisdom\teches\RendererGL.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="gisdom\teches\techbasicrte2.h" />
+    <ClInclude Include="gisdom\teches\tech_objects2.h" />
+    <ClInclude Include="gisdom\teches\tech_objects3.h" />
+    <ClInclude Include="gisdom\teches\tech_tiled2.h" />
+    <ClInclude Include="gisdom\teches\tech_tiled3.h" />
+    <ClInclude Include="gisdom\tileid.h" />
+    <ClInclude Include="gisdom\type\coretypes.h" />
+    <ClInclude Include="gisdom\type\entitypck.h" />
+    <ClInclude Include="gcprec.h" />
+    <ClInclude Include="gisdom\alg\alg_geos.h" />
+    <ClInclude Include="gisdom\alg\gc_algebra.h" />
+    <ClInclude Include="gisdom\alg\geoproj.h" />
+    <ClInclude Include="gisdom\alg\wgsop.h" />
+    <ClInclude Include="gisdom\engine.hpp" />
+    <ClInclude Include="gisdom\geom\Box.h" />
+    <ClInclude Include="gisdom\geom\Coordinate.h" />
+    <ClInclude Include="gisdom\geom\CoordinateFilter.h" />
+    <ClInclude Include="gisdom\geom\CoordSeq.h" />
+    <ClInclude Include="gisdom\geom\Geometry.h" />
+    <ClInclude Include="gisdom\geom\LineSegment.h" />
+    <ClInclude Include="gisdom\geom\LineString.h" />
+    <ClInclude Include="gisdom\geom\MGeometry.h" />
+    <ClInclude Include="gisdom\geom\MLineString.h" />
+    <ClInclude Include="gisdom\geom\MPoint.h" />
+    <ClInclude Include="gisdom\geom\MPolygon.h" />
+    <ClInclude Include="gisdom\geom\Point.h" />
+    <ClInclude Include="gisdom\geom\Polygon.h" />
+    <ClInclude Include="gisdom\io\geos_io.h" />
+    <ClInclude Include="gisdom\io\wkbio.h" />
+    <ClInclude Include="gisdom\models\geometric.h" />
+    <ClInclude Include="gisdom\models\model.h" />
+    <ClInclude Include="gisdom\node\udatanode.hpp" />
+    <ClInclude Include="gisdom\node\umodelnode.h" />
+    <ClInclude Include="gisdom\node\urendernode.hpp" />
+    <ClInclude Include="gisdom\teches\techbase.h" />
+    <ClInclude Include="gisdom\teches\techbasic.h" />
+    <ClInclude Include="gisdom\type\entity.h" />
+    <ClInclude Include="gisdom\type\entityset.h" />
+    <ClInclude Include="gisdom\type\typeschema.hpp" />
+    <ClInclude Include="gisdom\unique_handle.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="wxui\Canvas.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\DataTree.h" />
+    <ClInclude Include="wxui\demcachedlg.h" />
+    <ClInclude Include="wxui\dlg\IconSingleChoiceDialog.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\EditorCmds.h" />
+    <ClInclude Include="wxui\gvesizer.h" />
+    <ClInclude Include="wxui\editorfrm.h" />
+    <ClInclude Include="wxui\menucmd.h" />
+    <ClInclude Include="wxui\PIFrame.h" />
+    <ClInclude Include="wxui\sigslot.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\BaseLineTool.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\CircleTool.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\DifferenceTool.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\DotTool.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\HandTool.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\inputtool.h" />
+    <ClInclude Include="wxui\tools\IntersectionTool.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\LineTool.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\MoveTool.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\PlotModel.h" />
+    <ClInclude Include="wxui\tools\PlotModelBase.h" />
+    <ClInclude Include="wxui\tools\PointerTool.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\PolygonTool.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\RectPM.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\RectTool.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\RotatePM.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\RotateTool.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\RulerTool.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tools\tool.h" />
+    <ClInclude Include="wxui\tools\ToolOptions.h" />
+    <ClInclude Include="wxui\tools\VertexEditor.h">
+      <DeploymentContent>false</DeploymentContent>
+    </ClInclude>
+    <ClInclude Include="wxui\tree\CConnect.h" />
+    <ClInclude Include="wxui\tree\wscolumngroup.h" />
+    <ClInclude Include="wxui\tree\wscolumn.h" />
+    <ClInclude Include="wxui\tree\wsmodel.h" />
+    <ClInclude Include="wxui\tree\wsmodelgroup.h" />
+    <ClInclude Include="wxui\tree\wsmodeltableinput.h" />
+    <ClInclude Include="wxui\tree\wsmodeltableinputcolumn.h" />
+    <ClInclude Include="wxui\tree\wsmodeltableinputgroup.h" />
+    <ClInclude Include="wxui\tree\wstablegroup.h" />
+    <ClInclude Include="wxui\tree\wsdatasrc.h" />
+    <ClInclude Include="wxui\tree\wsdatasrcgroup.h" />
+    <ClInclude Include="wxui\tree\wsfile.h" />
+    <ClInclude Include="wxui\tree\wsitem.h" />
+    <ClInclude Include="wxui\tree\wslayer.hpp" />
+    <ClInclude Include="wxui\tree\wsscene.h" />
+    <ClInclude Include="wxui\tree\wsscenegroup.h" />
+    <ClInclude Include="wxui\tree\wstable.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="geoce.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{315ED00B-A58D-4DD0-8960-8DB85370247F}</ProjectGuid>
+    <RootNamespace>gce</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>geoce</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\bin\$(Platform)$(Configuration)\</OutDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</EmbedManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\bin\$(Platform)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)d</TargetName>
+    <EnableClangTidyCodeAnalysis>true</EnableClangTidyCodeAnalysis>
+    <ClangTidyChecks>-clang-diagnostic-unused-parameter</ClangTidyChecks>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <VcpkgConfiguration>Debug</VcpkgConfiguration>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP /utf-8 /Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;art;./gisdom;./wxui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;__WXMSW__;__WXDEBUG__;_WINDOWS;WXUSINGDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>gcprec.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ForcedIncludeFiles>gcprec.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <ResourceCompile />
+    <Link>
+      <AdditionalDependencies>glew32d.lib;winmm.lib;comctl32.lib;rpcrt4.lib;wsock32.lib;vfw32.lib;opengl32.lib;glu32.lib;libpq.lib;geos_c.lib;gdald.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;MSVCRT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <Profile>true</Profile>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP /utf-8 /Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>.;art;./gisdom;./wxui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WXUSINGDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>gcprec.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ForcedIncludeFiles>gcprec.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <ResourceCompile />
+    <Link>
+      <AdditionalDependencies>glew32.lib;winmm.lib;comctl32.lib;rpcrt4.lib;wsock32.lib;vfw32.lib;opengl32.lib;glu32.lib;libpq.lib;geos_c.lib;squish.lib;gdal.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

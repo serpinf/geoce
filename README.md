@@ -29,7 +29,7 @@ Use vcpkg to install the following libraries:
 - fmt
 - gtest
 ### Building 
-Windows only, build files for other platforms are work in progress. Clone the repository, use FreeGVE.sln to build sample project and tests
+Windows only, build files for other platforms are work in progress. Clone the repository, use geoce.sln to build sample project and tests
 ### Usage
 Run the App, create a new workspace, add datasources, models and scenes.
 As of now you need a PostgreSQL server with PostGIS installed to work with vector data and a web map access to view 3D Globe
